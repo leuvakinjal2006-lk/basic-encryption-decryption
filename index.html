@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cyber Encryption Tool</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🔐 Encryption & Decryption Tool</h1>
+    <p class="subtitle">Cyber Security Project 2</p>
+
+    <textarea id="inputText" placeholder="Enter your secret message..."></textarea>
+
+    <input type="number" id="shift" placeholder="Enter Shift Key (1-25)" min="1" max="25">
+
+    <div class="buttons">
+        <button class="encrypt-btn" onclick="encryptText()">Encrypt</button>
+        <button class="decrypt-btn" onclick="decryptText()">Decrypt</button>
+        <button class="clear-btn" onclick="clearAll()">Clear</button>
+    </div>
+
+    <div class="output-box">
+        <h3>🔒 Encrypted Text</h3>
+        <p id="encryptedOutput">---</p>
+    </div>
+
+    <div class="output-box">
+        <h3>🔓 Decrypted Text</h3>
+        <p id="decryptedOutput">---</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
